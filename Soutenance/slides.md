@@ -1,4 +1,5 @@
 ---
+twoslash: false
 src: ./pages/cover.md
 hide: false
 hideInToc: true
@@ -7,7 +8,12 @@ hideInToc: true
 <style src="./theme.css"></style>
 
 ---
-src: ./pages/intro.md
+src: ./pages/développement-drones.md
+hide: false
+---
+
+---
+src: ./pages/réduction-passive.md
 hide: false
 ---
 
