@@ -48,7 +48,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v5
         with:
-          path: dist
+          path: Soutenance/dist
 
   deploy:
     defaults:
