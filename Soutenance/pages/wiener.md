@@ -1,8 +1,8 @@
 ---
 theme: seriph
 layout: image
-image: "/assets/Arriere_plan_dimmed.png"
-title: Introduction
+image: "/images/Arriere_plan_dimmed.png"
+title: Filtre de Wiener
 ---
 
 # Filtre de Wiener

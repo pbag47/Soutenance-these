@@ -1,7 +1,7 @@
 ---
 theme: seriph
 layout: image
-image: "/assets/Arriere_plan_dimmed.png"
+image: "/images/Arriere_plan_dimmed.png"
 title: Table des matières
 ---
 
