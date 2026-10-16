@@ -65,3 +65,7 @@ title: Discrétion acoustique d'un drone
     </div>
 </div>
 
+
+<!-- 
+En présence de mes pairs. Parvenu(e) à l'issue de mon doctorat en , et ayant ainsi pratiqué, dans ma quête du savoir, l'exercice d'une recherche scientifique exigeante, en cultivant la rigueur intellectuelle, la réflexivité éthique et dans le respect des principes de l'intégrité scientifique, je m'engage, pour ce qui dépendra de moi, dans la suite de ma carrière professionnelle quel qu'en soit le secteur ou le domaine d'activité, à maintenir une conduite intègre dans mon rapport au savoir, mes méthodes et mes résultats.
+-->

@@ -5,11 +5,24 @@ image: "/images/Arriere_plan_dimmed.png"
 title: Introduction
 ---
 
+<!--  Titres -->
+<div class="flex gap-10 w-full items-baseline">
+<div class="flex-col">
+
 # Introduction
+
+</div>
+<div class="flex-col w-full text-center">
+
+## Enjeux
+
+</div>
+</div>
+
 
 <div class="absolute top-40 left-10 right-10">
 
-|       | Au 01/01/2024 | Au 31/12/2024   | Évolution |
+|       | Début 2024 | Fin 2024   | Évolution |
 | :---  | ---: | ---: | ---: |
 | **Drones enregistrés en France** | $320 \, 814$ | $387 \, 260$ | $+\ 21\,\%$ |
 | **Exploitants professionnels de drones en France**| $16 \, 232$ | $18 \, 191$ | $+ \ 12\,\%$ | 

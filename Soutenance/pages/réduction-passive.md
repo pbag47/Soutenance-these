@@ -2,10 +2,23 @@
 theme: seriph
 layout: image
 image: "/images/Arriere_plan_dimmed.png"
-title: Introduction
+title: Discrétion acoustique
+level: 2
 ---
 
+<!--  Titres -->
+<div class="flex gap-10 w-full items-baseline">
+<div class="flex-col">
+
 # Introduction
+
+</div>
+<div class="flex-col w-full text-center">
+
+## Moyens de réduction du bruit
+
+</div>
+</div>
 
 
 <!-- Réduction passive de bruit -->

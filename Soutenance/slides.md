@@ -18,6 +18,11 @@ hide: false
 ---
 
 ---
+src: ./pages/réduction-active-drone.md
+hide: false
+---
+
+---
 src: ./slides/02-problematique.md
 level: 2
 ---
