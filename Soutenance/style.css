@@ -1,0 +1,16 @@
+/* Applique le padding à TOUTES les slides... */
+.slidev-layout {
+  padding-left: 5.5cm !important;
+  padding-right: 0.5cm !important;
+  padding-bottom: 0.75cm !important;
+}
+
+/* ...Sauf à la première slide (la couverture) */
+.slidev-page-1 .slidev-layout {
+  padding-left: 2rem !important; /* Padding d'origine */
+}
+
+.slidev-layout h1 {
+  margin-top: -0.75cm !important;
+}
+

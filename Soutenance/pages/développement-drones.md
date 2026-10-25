@@ -1,54 +1,36 @@
 ---
 theme: seriph
-layout: image
-image: "/images/Arriere_plan_dimmed.png"
 title: Introduction
+level: 1
 ---
-
-<!--  Titres -->
-<div class="flex gap-10 w-full items-baseline">
-<div class="flex-col">
 
 # Introduction
 
-</div>
-<div class="flex-col w-full text-center">
-
-## Enjeux
-
-</div>
-</div>
-
-
-<div class="absolute top-40 left-10 right-10">
-
-|       | Début 2024 | Fin 2024   | Évolution |
-| :---  | ---: | ---: | ---: |
-| **Drones enregistrés en France** | $320 \, 814$ | $387 \, 260$ | $+\ 21\,\%$ |
-| **Exploitants professionnels de drones en France**| $16 \, 232$ | $18 \, 191$ | $+ \ 12\,\%$ | 
-
-</div>
-
-<!-- $+ \ 66  \, 446$   $+ \ 1 \, 959$ -->
-
-
-<div class="text-center absolute bottom-5 w-full">
-
-Sources : [rapport d'activité 2024 de la DSAC](https://salledelecture-ext.aviation-civile.gouv.fr/externe/DSAC/Rapport_activite_2024_DSAC.pdf)
-
-</div>
-
-
-<div
-    class="absolute top-30 left-0 w-full flex justify-center items-center"
-    v-motion v-click
-    :initial="{ x: 0,  y: 100 }"
-    :enter="{ x: 0, y: 0 }"
->
-    <img src="/images/Applications drones.png" class="h-100 object-contain"/>
-</div>
-
-<!-- Numéro de diapositive -->
-<div class="text-right absolute bottom-5 right-5">
-    <SlideCurrentNo />
+<div class="flex justify-center items-center gap-10">
+    <div class="flex flex-col gap-2 w-50%">
+        <img 
+            src="/images/fig_nb_drones.png" 
+            class="object-contain rounded border border-white-1"
+        />
+        <img 
+            src="/images/fig_nb_pro.png" 
+            class="object-contain rounded border border-white-1"
+        />
+        <a 
+            href="https://www.ecologie.gouv.fr/politiques-publiques/securite-aerienne" 
+            target="_blank" 
+            class="text-primary hover:underline text-center">
+            Rapports d'activité de la DSAC
+        </a>
+    </div>
+    <div class="flex flex-col gap-5 w-50%">
+        <img 
+            src="/images/Applications drones.png" 
+            class="object-contain rounded border border-white-2"
+        />
+        <img 
+            src="/images/drone-rapace.jpg" 
+            class="object-contain rounded border border-white-2"
+        />
+    </div>
 </div>

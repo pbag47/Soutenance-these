@@ -1,59 +1,55 @@
 ---
-theme: seriph
-layout: image
-image: "/images/Arriere_plan_dimmed.png"
-title: Discrétion acoustique
+title: Introduction
 level: 2
 ---
 
-<!--  Titres -->
-<div class="flex gap-10 w-full items-baseline">
-<div class="flex-col">
 
 # Introduction
 
-</div>
-<div class="flex-col w-full text-center">
-
-## Moyens de réduction du bruit
-
-</div>
-</div>
-
-
-<!-- Réduction passive de bruit -->
-<div
-  v-motion
-  :enter="{ x: 0, y: 100 }"
-  :click-1="{ x: 0, y: 0 }"
->
-    <div class="flex items-center justify-center w-full gap-40 text-center">
-        <div class="flex flex-col">
-            <img src="/images/pales_profilees.jfif" class="h-40" />
-            Forme et matériau des hélices
+<div class="relative top-5% 1fr pb-16">
+    <div class="relative w-fit">
+        <!-- Spectre -->
+        <img 
+            src="/images/UAV_noise_spectrum_dark.png"
+            class="object-contain rounded border border-white-1"
+        />
+        <!-- Encadré orange -->
+        <div 
+            v-click
+            v-motion
+            :initial="{ left: '0%', top: '15%', width: '5%', height: '5%' }"
+            :enter="{ left: '50%', top: '15%', width: '45%', height: '65%' }"
+            :click-1="{ left: '50%', top: '15%', width: '45%', height: '65%' }"
+            :click-2="{ left: '25%', top: '15%', width: '30%', height: '65%' }"
+            class="absolute left-0 border-2 border-orange-500 bg-orange-500/10 rounded"
+        >
         </div>
-        <div class="flex flex-col">
-            <img src="/images/hélices carénées.png" class="h-40" />
-            Carénages
-        </div>
+    </div>
+    <!-- Images réduction passive -->
+    <div
+        v-after
+        v-click.hide
+        v-if="$clicks >= 1 && $clicks < 2" 
+        class="absolute top-10% left-15% z-10"
+    >
+        <img
+            src="/images/pales_profilees.jfif"
+            class="w-60 h-auto" 
+        />
+        <img 
+            src="/images/hélices carénées.png" 
+            class="w-60 h-auto" 
+        />
+    </div>
+    <!-- Image réduction active -->
+    <div
+        v-click
+        class="absolute top-15% right-10% z-10"
+    >
+        <img
+            src="/images/anc-principe.webp"
+            class="w-60 h-auto bg-white/75 backdrop-blur rounded" 
+        />
     </div>
 </div>
 
-
-<!-- Réduction active embarquée pour effacer le bruit du drone sur un enregistrement audio -->
-<div
-  v-motion v-click
-  :initial="{ x: 0,  y: 200 }"
-  :enter="{ x: 0, y: 10 }"
->
-    <div class="flex justify-center items-center w-full text-center flex-col">
-        <img src="/images/Dotterel.png" class="h-50" />
-        Dotterel Technologies : effacer le bruit du drone sur un enregistrement audio
-    </div>
-</div>
-
-
-<!-- Numéro de diapositive -->
-<div class="text text-right absolute bottom-5 right-5">
-    <SlideCurrentNo />
-</div>

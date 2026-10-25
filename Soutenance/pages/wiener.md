@@ -1,32 +1,59 @@
 ---
-theme: seriph
-layout: image
-image: "/images/Arriere_plan_dimmed.png"
 title: Filtre de Wiener
+level: 1
 ---
 
 # Filtre de Wiener
 
-<div class="absolute top-20 left-0 right-0 flex items-center">
+<!-- <div class="absolute top-20 left-0 right-0 flex items-center">
     <SlidevVideo autoplay autoreset="slide">
         <source src="/videos/CircleToSquare.webm" type="video/webm" />
     </SlidevVideo>
+</div> -->
+
+<div></div>
+
+Solution de la méthode des moindres carrés pour l'erreur $e_n$
+$$
+    \boldsymbol{H}_n = \mathbf{R}_n^{-1} \boldsymbol{C}_n
+$$
+
+$$
+    \begin{align}
+        \nonumber \mathbf{R}_n &= \mathbb{E} \{ \boldsymbol{X}_n \boldsymbol{X}_n^t \} && \text{Matrice d'autocorrélation du signal de référence} \\
+        \nonumber \boldsymbol{C}_n &= \mathbb{E} \{ d_n \boldsymbol{X}_n \} && \text{Corrélation entre le signal désiré et le signal de référence}
+    \end{align}
+$$
+
+<div class="flex justify-start gap-10 items-baseline">
+<div>
+Problème : comment déterminer l'espérance ?
+</div>
+<div>
+
+- Mesures limitées
+- Mémoire limitée
+- Vitesse de calcul limitée
+
+</div>
 </div>
 
+Recours à un estimateur récursif avec $\beta \in \mathopen] 0 ; 1 \mathclose[$ :
+<div class="flex flex-col gap-0">
+<div class="flex justify-center -mt-6">
+
 $$
-    H_n = R_n^{-1} C_n
-
-
-% \begin{aligned}
-% \nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
-% \nabla \cdot \vec{B} &= 0 \\
-% \nabla \times \vec{E} &= -\frac{\partial\vec{B}}{\partial t} \\
-% \nabla \times \vec{B} &= \mu_0\vec{J} + \mu_0\varepsilon_0\frac{\partial\vec{E}}{\partial t}
-% \end{aligned}
+    \begin{align}
+        \nonumber \hat{s}_n &= \frac{1}{\sum_{j=0}^{n-1} \beta^j} \sum_{k=0}^{n-1} \beta^{k} s_{n-k} \\
+        \nonumber \hat{s}_n &= (1-\beta) s_n + \beta \hat{s}_{n-1}
+        % \nonumber &\mathbb{E} \{ s_n \} \approx  \hat{s}_n
+    \end{align}
 $$
+</div>
+<div class="flex justify-center -mt-6">
 
-
-<!-- Numéro de diapositive -->
-<div class="text text-right absolute bottom-5 right-5">
-    <SlideCurrentNo />
+$$ 
+\mathbb{E} \{ s_n \} \approx  \hat{s}_n
+$$
+</div>
 </div>

@@ -1,9 +1,9 @@
 ---
 theme: seriph
 layout: image
-image: "/images/Arriere_plan_dimmed.png"
+image: "/images/Arriere_plan_dimmed.jfif"
 title: Réduction active de bruit
-level: 2
+level: 1
 ---
 
 
@@ -116,10 +116,4 @@ class="absolute top-30 flex-col gap-5 transition-all duration-1000 ease-out text
             Echappement -->
         </div>
     </div>
-</div>
-
-
-<!-- Numéro de diapositive -->
-<div class="text text-right absolute bottom-5 right-5">
-    <SlideCurrentNo />
 </div>

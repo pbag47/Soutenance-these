@@ -5,16 +5,25 @@ image: "/images/Arriere_plan_cover.png"
 title: Discrétion acoustique d'un drone
 ---
 
-<!-- Coin des logos -->
-<div class="absolute top-0 right-0 flex gap-5 items-center bg-white p-1 rounded shadow-sm">
-  <img src="/logos/logo_amu.svg" class="h-10" />
-  <img src="/logos/logo-AID.png" class="h-15" />
-  <img src="/logos/logo-DRIVE.jpg" class="h-10" />
+<!-- Financement AID -->
+<!-- <div class="flex justify-start">
+  <div class="absolute bottom-0 left-10 flex justify-center items-center h-15 w-60">
+    <p> Financement : <br> Agence Innovation Défense </p>
+  </div>
+</div> -->
+
+<!-- Logos -->
+<div class="flex justify-center">
+  <div class="absolute bottom-0 flex justify-center gap-5 items-center bg-white p-1 rounded shadow-sm h-15">
+    <img src="/logos/logo-AID.png" class="h-15" />
+    <img src="/logos/logo_amu.svg" class="h-10" />
+    <img src="/logos/logo-DRIVE.jpg" class="h-10" />
+  </div>
 </div>
 
 
 <!-- Bandeau blanc -->
-<div class="absolute top-30 left-0 right-0 h-20 bg-white text-black text-bold flex items-center justify-between px-8 shadow-sm z-10">
+<div class="absolute top-0 left-0 right-0 h-20 bg-white text-black text-bold flex items-center justify-between px-8 shadow-sm z-10">
   <!-- Section Logos (Gauche) -->
   <div class="flex items-center gap-4 text-2xl">
     <img src="/logos/logo_eae.png" class="h-20" />
@@ -32,14 +41,15 @@ title: Discrétion acoustique d'un drone
 </div>
 
 <!-- Titres -->
-<div class="text-center absolute top-55 left-0 right-0 tracking-wider">
-  <h2 class="text font-bold">Soutenance de thèse de Pierre BAGNARA</h2>
+<div class="text-center absolute top-29 left-0 right-0 tracking-wider backdrop-blur">
+  <h2 class="text font-bold">Soutenance de thèse de M. Pierre BAGNARA</h2>
+  <h2>pour l'obtention du titre de docteur d'Aix-Marseille Université </h2>
   <h4>Lundi 2 novembre 2026, 14h, Salon-de-Provence</h4>
 </div>
 
 <!-- Membres du jury -->
 <div class="flex justify-center">
-    <div class="grid grid-cols-2 gap-1 absolute top-80 mx-auto tracking-wider bg-black/25 rounded">
+    <div class="grid grid-cols-2 gap-1 absolute top-60 mx-auto tracking-wider rounded border border-white-2 backdrop-blur bg-black/5">
         <h5 class="mx-2">
             Gérard SCORLETTI <br>
             Jean-Hugh THOMAS <br>
