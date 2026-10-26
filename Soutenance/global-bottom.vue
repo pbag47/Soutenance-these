@@ -1,10 +1,15 @@
 
-<template>
-    <div v-if="$nav.currentPage !== 1"
-        class="absolute inset-0 -z-10 pointer-events-none bg-cover bg-center"
-        style="background-image: url('/images/Arriere_plan_dimmed.jfif');"
-    />
+<script setup>
+</script>
 
+
+<template>
+    <img 
+        v-if="$nav.currentPage !== 1" 
+        src="/images/Arriere_plan_dimmed.jfif" 
+        class="absolute inset-0 -z-10 pointer-events-none w-full h-full object-cover object-center" 
+        alt="Background"
+    />
     <div v-if="$nav.currentPage !== 1">
         <div class="absolute left-0 top-0 h-full w-5cm bg-gray-900 border border-gray-600 text-white p-5 z-50">
             <h1 class="font-bold mb-4">Sommaire</h1>
@@ -18,7 +23,3 @@
         </div>
     </div>
 </template>
-
-
-<script setup>
-</script>
