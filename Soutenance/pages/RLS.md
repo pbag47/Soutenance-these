@@ -72,7 +72,7 @@ $$
 Algorithme RLS
 
 $$
-\boldsymbol{H}_n = \boldsymbol{H}_{n-1} + (1-\beta) e_n  \mathbf{R}_n^{-1} \boldsymbol{X}_n
+\boldsymbol{H}_n = \boldsymbol{H}_{n-1} + (1-\beta) e_n  \hat{\mathbf{R}}_n^{-1} \boldsymbol{X}_n
 $$
 
 </div>

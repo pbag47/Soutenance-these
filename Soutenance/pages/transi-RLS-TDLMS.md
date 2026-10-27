@@ -42,7 +42,7 @@ level: 1
         >
 
 $$
-\boldsymbol{H}_n = \boldsymbol{H}_{n-1} + (1-\beta) e_n  \boxed{\mathbf{R}_n^{-1}} \boldsymbol{X}_n
+\boldsymbol{H}_n = \boldsymbol{H}_{n-1} + (1-\beta) e_n  \boxed{\hat{\mathbf{R}}_n^{-1}} \boldsymbol{X}_n
 $$
 </div>
 

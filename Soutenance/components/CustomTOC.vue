@@ -1,19 +1,17 @@
-
 <!-- components/CustomTOC.vue -->
+
 <template>
     <div v-for="s in validSlides" :key="s.no">
         <span 
             v-if="s.meta?.slide?.frontmatter?.title && s.meta?.slide?.frontmatter?.level === 1"
-            :style="{
-                color: getTitleBySlideNo(currentActiveSectionNo) === s.meta?.slide?.frontmatter?.title ? 'white' : 'gray',
-                fontWeight: getTitleBySlideNo(currentActiveSectionNo) === s.meta?.slide?.frontmatter?.title ? '600' : '400',
-                borderLeft: getTitleBySlideNo(currentActiveSectionNo) === s.meta?.slide?.frontmatter?.title ? '2px solid #34d399' : '2px solid transparent'
-            }"
+            class="toc-item"
+            :class="{ 'toc-item--active': isActive(s) }"
         >
             {{ s.meta.slide.frontmatter.title }}
         </span>
     </div>
 </template>
+
 
 <script setup>
 import { computed } from 'vue'
@@ -47,54 +45,29 @@ function getTitleBySlideNo(slideNo) {
   // On retourne son titre s'il existe, sinon une chaîne vide
   return targetSlide?.meta?.slide?.frontmatter?.title || ''
 }
+
+// Une entrée est active si son titre correspond à la section en cours
+function isActive(s) {
+  return getTitleBySlideNo(currentActiveSectionNo.value) === s.meta?.slide?.frontmatter?.title
+}
 </script>
 
 
-
-
-
-<!-- components/MonSommairePerso.vue -->
-<!-- <template>
-  <ul>
-    <li 
-      v-for="slide in validSlides" 
-      :key="slide.no" 
-      class="my-2 text-sm pl-2"
-    >
-      <span 
-        @click="goTo(slide.no)" 
-        class="cursor-pointer hover:text-white block w-full text-left"
-        :style="{
-            color: activeNo === slide.no ? '#34d399' : '#9ca3af',
-            fontWeight: activeNo === slide.no ? '600' : '400',
-            borderLeft: activeNo === slide.no ? '2px solid #34d399' : '2px solid transparent'
-        }"
-      >
-        {{ slide.frontmatter?.title }}
-      </span>
-    </li>
-  </ul>
-</template>
-
-<script setup>
-import { computed } from 'vue'
-import { useNav } from '@slidev/client'
-
-// Utilisation des hooks officiels réactifs de Slidev
-const { currentSlideNo, total, slides } = useNav()
-
-const validSlides = computed(() => {
-  return Array.from(slides.value).filter(s => s.frontmatter?.title)
-})
-
-const activeNo = computed(() => {
-  const sectionNumbers = validSlides.value.map(s => s.no)
-  return [...sectionNumbers].reverse().find(no => no <= currentSlideNo.value)
-})
-
-function goTo(pageNo) {
-  console.log("Clic détecté vers la page :", pageNo)
-  // Utilisation de la méthode de navigation native
-  window.$slidev.nav.go(pageNo)
+<style scoped>
+/* Seules les couleurs, ombres et fonds changent : police, graisse de base,
+   épaisseur de bordure (2px) et position restent identiques à l'original. */
+.toc-item {
+    color: #8497b0;
+    font-weight: 400;
+    border-left: 2px solid transparent;
+    transition: color 0.25s ease, border-color 0.25s ease, background-size 0.25s ease;
 }
-</script> -->
+
+.toc-item--active {
+    color: #ffffff;
+    font-weight: 600;
+    border-left-color: #5ecfe0;
+    background-image: linear-gradient(90deg, rgba(94, 207, 224, 0.18), rgba(94, 207, 224, 0));
+    text-shadow: 0 0 10px rgba(94, 207, 224, 0.35);
+}
+</style>

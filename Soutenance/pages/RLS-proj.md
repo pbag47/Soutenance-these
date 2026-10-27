@@ -30,7 +30,7 @@ $\mathbf{P}$ : matrice unitaire arbitraire
 
 $$
 \begin{align}
-    \nonumber \hat{\mathbf{\Omega}}_n &= \mathbf{P} \mathbf{R} \mathbf{P}^{-1} \\
+    \nonumber \hat{\mathbf{\Omega}}_n &= \mathbf{P} \hat{\mathbf{R}}_n \mathbf{P}^{-1} \\
     \nonumber \boldsymbol{H}_n' &= \mathbf{P} \boldsymbol{H}_n \\ 
     \nonumber \boldsymbol{X}_n' &= \mathbf{P} \boldsymbol{X}_n
 \end{align}
