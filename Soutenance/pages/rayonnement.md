@@ -1,7 +1,6 @@
 ---
-theme: seriph
-title: Rayonnement
-level: 2
+title: Premières études
+level: 1
 ---
 
 

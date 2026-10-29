@@ -1,5 +1,5 @@
 ---
-title: Stage
+title: Premiers essais
 level: 1
 ---
 
@@ -10,7 +10,7 @@ level: 1
         <div class="flex justify-center gap-4 h-full max-h-full">
             <img
                 src="/images/Manip_stage.png"
-                class="object-contain bg-white/85% backdrop-blur max-h-full max-w-48%"
+                class="object-contain rounded border border-white bg-white/85% backdrop-blur max-h-full max-w-48%"
             />
             <img
                 src="/images/Attenuation_stage_dark.png"
@@ -21,7 +21,7 @@ level: 1
     <div class="flex-1 min-h-0 flex justify-center">
         <img
             src="/images/Architecture feedforward.png"
-            class="object-contain bg-white/85 backdrop-blur h-225px max-h-full"
+            class="object-contain bg-white/85 backdrop-blur h-225px max-h-full rounded border border-white"
         />
     </div>
     <v-click>

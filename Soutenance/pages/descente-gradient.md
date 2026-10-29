@@ -6,10 +6,10 @@ level: 2
 # Algorithme LMS
 
 
-<div class="absolute w-40% left-60% top-0">
+<div class="absolute w-35% right-0% top-0">
     <img 
         src="/images/Filtre FIR adaptatif.png"
-        class="object-contain bg-white/85 backdrop-blur"
+        class="object-contain bg-white/85 backdrop-blur rounded border border-white"
     />
 </div>
 

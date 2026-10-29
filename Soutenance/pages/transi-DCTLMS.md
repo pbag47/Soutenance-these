@@ -1,6 +1,6 @@
 ---
-title: Unification
-level: 1
+title: Démarche
+level: 2
 ---
 
 
@@ -14,7 +14,7 @@ level: 1
         />
         <!-- Approche littérature (vert) -->
         <div 
-            class="absolute right-0% w-22% h-62% top-40% border-2 border-green-500 bg-green-500/10 rounded z-10">
+            class="absolute right-0% w-22% h-56% top-45% border-2 border-green-500 bg-green-500/10 rounded z-10">
         </div>
         <!-- Flou -->
         <div
@@ -34,18 +34,7 @@ level: 1
             class="absolute left-0 border-2 border-orange-500 bg-orange-500/10 rounded"
         >
         </div>
-
-<!-- <svg v-click class="absolute inset-0 w-full h-full pointer-events-none z-10" viewBox="0 0 800 400">
-<defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-    <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="orange"/>
-    </marker>
-</defs>
-<!-- M = Départ (X Y), Q = Point de contrôle de la courbe (X Y), puis Point d'arrivée (X Y) -->
-<!-- <path d="M 120 130 Q 310 250 500 130" stroke="orange" stroke-width="3" fill="none" marker-end="url(#arrow)" />
-</svg> -->
-
-</div>
+    </div>
 </div> 
 
 

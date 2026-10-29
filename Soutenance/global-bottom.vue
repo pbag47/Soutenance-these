@@ -44,7 +44,19 @@
 
 /* ---------- Bandeau gauche ---------- */
 .gb-sidebar {
+    /* Fond en couches (de haut en bas) :
+       1. reflet diffus turquoise en haut à gauche
+       2. bande de lumière diagonale très douce (effet "glare")
+       3. halo discret en bas à droite pour équilibrer
+       4. dégradé de base bleu nuit */
     background:
+        radial-gradient(130% 48% at 0% 0%, rgba(var(--cyan), 0.16) 0%, rgba(var(--cyan), 0) 65%),
+        linear-gradient(115deg,
+            rgba(255, 255, 255, 0) 28%,
+            rgba(255, 255, 255, 0.055) 40%,
+            rgba(255, 255, 255, 0.02) 50%,
+            rgba(255, 255, 255, 0) 60%),
+        radial-gradient(110% 38% at 100% 100%, rgba(var(--cyan), 0.07) 0%, rgba(var(--cyan), 0) 70%),
         linear-gradient(180deg, rgba(var(--navy-deep), 0.94) 0%, rgba(5, 11, 22, 0.97) 100%);
     border-color: rgba(var(--cyan), 0.16);
     box-shadow:

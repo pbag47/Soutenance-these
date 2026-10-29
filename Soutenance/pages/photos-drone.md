@@ -3,7 +3,7 @@ title: Drone
 level: 1
 ---
 
-# Drone
+# Drone + système embarqué
 
 <div class="flex gap-10">
     <div class="flex-col">
@@ -20,9 +20,10 @@ level: 1
     </div>
 </div>
 
-<!-- <div class="flex w-50%">
-    <img
-        src="/images/3 Drone cote.jpg"
-        class="object-contain rounded border border-white-1"
-    />
-</div> -->
+<div class="text-center">
+    Système de réduction active de bruit
+</div>
+
+- $1.2$kg
+- $1$h $20$min d'autonomie énergétique  
+- $10$km de portée (télécommunications)     

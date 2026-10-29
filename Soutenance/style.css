@@ -1,11 +1,11 @@
-/* Applique le padding à TOUTES les slides... */
+/* Applique le padding à TOUTES les slides pour le bandeau à gauche... */
 .slidev-layout {
   padding-left: 5.5cm !important;
   padding-right: 0.5cm !important;
   padding-bottom: 0.75cm !important;
 }
 
-/* ...Sauf à la première slide (la couverture) */
+/* ... sauf à la première slide (la couverture) */
 .slidev-page-1 .slidev-layout {
   padding-left: 2rem !important; /* Padding d'origine */
 }
@@ -14,3 +14,8 @@
   margin-top: -0.75cm !important;
 }
 
+/* Annule l'effet par défaut de transparence sur le 
+paragraphe qui suit un titre */
+.slidev-layout h1 + p {
+  opacity: 1 !important;
+}

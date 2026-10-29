@@ -10,8 +10,8 @@ error_squared = numpy.square(error)
 
 fig_error = plotly.graph_objects.Figure(
     layout=dict(
-        title_text="Erreur",
-        title_font_size=24,
+        title_text=r"$\text{Erreur}~e_n$",
+        title_font_size=30,
         template="plotly_dark",
         autosize=False,
         width=350,
@@ -43,8 +43,8 @@ fig_error.add_trace(
 
 fig_error_squared = plotly.graph_objects.Figure(
     layout=dict(
-        title_text="Erreur quadratique",
-        title_font_size=24,
+        title_text=r"$\text{Erreur quadratique}~e_n^2$",
+        title_font_size=30,
         template="plotly_dark",
         autosize=False,
         width=350,

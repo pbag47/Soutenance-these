@@ -1,5 +1,5 @@
 ---
-title: RLS projeté
+title: -RLS projeté
 level: 1
 ---
 
@@ -50,7 +50,7 @@ $$
 
 Lorsque $\hat{\mathbf{\Omega}}_n$ est diagonale, son inversion n'est plus un défi
 
-<div class="flex gap-10">
+<div class="flex gap-10 items-baseline">
 <div>
 
 Quelle matrice $\mathbf{P}$ permet de diagonaliser $\hat{\mathbf{\Omega}}_n$ ?

@@ -1,31 +1,31 @@
 ---
-title: DCTLMS
+title: -DCTLMS
 level: 1
 ---
 
-# DCTLMS
+# Choix de la DCT-I
 
-<div class="flex">
-    <div class="flex flex-col w-40% gap-2">
-    </div>
-    <div class="flex flex-col w-60% gap-2">
-        <img
-            src="/images/Convergence_DCTLMS_dark.png"
-            class="object-contain rounded border border-white-1"
-        />
-        <img
-            src="/images/Erreur_DCTLMS_dark.png"
-            class="object-contain rounded border border-white-1"
-        />
-    </div>
-    <!-- <div class="flex flex-col w-60% gap-2">
-        <img
+<div class="flex gap-5">
+    <div class="flex flex-col w-50% gap-2 text-center border border-white rounded">
+    NLMS
+    <img
             src="/images/Convergence_NLMS_dark.png"
-            class="object-contain rounded border border-white-1"
+            class="object-contain rounded"
         />
         <img
             src="/images/Erreur_NLMS_dark.png"
-            class="object-contain rounded border border-white-1"
+            class="object-contain rounded"
         />
-    </div> -->
+    </div>
+    <div class="flex flex-col w-50% gap-2 text-center border border-white rounded">
+        DCTLMS-I
+        <img
+            src="/images/Convergence_DCTLMS_dark.png"
+            class="object-contain rounded"
+        />
+        <img
+            src="/images/Erreur_DCTLMS_dark.png"
+            class="object-contain rounded"
+        />
+    </div>
 </div>

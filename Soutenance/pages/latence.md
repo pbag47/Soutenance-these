@@ -5,15 +5,21 @@ level: 2
 
 
 <div class="flex gap-5">
-    <div class="flex-col">
+    <div class="flex-col text-center">
         <img
             src="/images/Mesure latence.png"
         />
-    </div>
-    <div class="flex-col">
+
+EVAL-ADAU1466Z : $1.3$ms
+
+</div>
+    <div class="flex-col text-center">
         <img
             src="/images/Mesure latence avec nouvelle carte et I2S.png"
         />
-    </div>
+
+EVAL-ADAU1787 : $0.3$ms
+    
+</div>
 </div>
 
