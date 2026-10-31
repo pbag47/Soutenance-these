@@ -1,5 +1,5 @@
 ---
-title: -NLMS
+title: -- NLMS
 level: 1
 ---
 
@@ -18,15 +18,15 @@ $$
 
 <Arrow 
     x1="30%" y1="25%" 
-    x2="30%" y2="85%" 
+    x2="30%" y2="65%" 
     width="3" 
     color="orange"
     z="60"
 />
 
-<div class="absolute left-35% top-25% justify-start">
+<div class="absolute left-32% top-30% justify-start border border-white px-5">
 
-Lorsqu'on choisit de rester dans la base temporelle
+On choisit de rester dans la base temporelle
 
 $$
 \begin{align}
@@ -37,7 +37,8 @@ $$
 
 </div>
 
-<div class="flex absolute bottom-5% items-baseline gap-10">
+<div class="flex absolute top-65% items-baseline gap-10">
+
 Algorithme NLMS
 
 $$

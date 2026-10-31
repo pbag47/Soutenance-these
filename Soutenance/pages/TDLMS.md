@@ -1,5 +1,5 @@
 ---
-title: -TDLMS
+title: -- TDLMS
 level: 1
 ---
 
@@ -8,6 +8,7 @@ level: 1
 
 
 <div class="flex items-baseline gap-10">
+
 Algorithme RLS projeté
 
 $$
@@ -16,33 +17,27 @@ $$
 </div>
 
 <Arrow 
-    x1="30%" y1="25%" 
-    x2="30%" y2="85%" 
+    x1="25%" y1="25%" 
+    x2="25%" y2="85%" 
     width="3" 
     color="orange"
     z="60"
 />
 
-<div class="absolute left-32% top-25% justify-start">
+<div class="absolute left-27% top-27% justify-start border border-white px-5">
 
-Choix d'une base constante comme substitut à la base des vecteurs propres de $\hat{\mathbf{R}}_n$
+On choisit une base constante comme substitut à la base des vecteurs propres de $\hat{\mathbf{R}}_n$
 
-$\hat{\mathbf{\Omega}}_n^{-1}$ rendue artificiellement diagonale
+$\hat{\mathbf{\Omega}}_n^{-1}$ est rendue artificiellement diagonale
 
 $$
 \begin{align}
-    \nonumber \mathbf{\Omega}_n &= \begin{bmatrix}
+    \nonumber \mathbf{\Omega}_n &= \begin{pmatrix}
     \mathbb{E}\{ x_n' x_n' \} & \mathbb{E}\{ x_n' x_{n-1}'\} & \cdots & \mathbb{E}\{ x_n' x_{n-L+1}' \} \\
     \mathbb{E}\{ x_n' x_{n-1}' \} & \mathbb{E}\{ x_{n-1}' x_{n-1}'\} & \cdots & \mathbb{E}\{ x_{n-1}' x_{n-L+1}' \} \\
     \vdots & \vdots & \ddots & \vdots \\
     \mathbb{E}\{ x_{n}' x_{n-L+1}' \} & \mathbb{E}\{ x_{n-1}' x_{n-L+1}'\} & \cdots & \mathbb{E}\{ x_{n-L+1}' x_{n-L+1}' \}
-\end{bmatrix}
-% \nonumber \mathbf{\Omega}_n^{-1} &\approx \begin{bmatrix}
-%     \mathbb{E}\{ x_n' x_n' \} & 0 & \cdots & 0 \\
-%     0 & \mathbb{E}\{ x_{n-1}' x_{n-1}'\} & \cdots & 0 \\
-%     \vdots & \vdots & \ddots & \vdots \\
-%     0 & 0 & \cdots & \mathbb{E}\{ x_{n-L+1}' x_{n-L+1}' \}
-% \end{bmatrix}
+\end{pmatrix}
 \end{align}
 $$
 Correction de l'erreur d'approximation par une constante multiplicative $\mu$

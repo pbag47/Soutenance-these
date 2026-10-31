@@ -1,9 +1,9 @@
 ---
-title: -DCTLMS
-level: 1
+title: -- DCTLMS-I
+level: 2
 ---
 
-# Choix de la DCT-I
+# Performances de l'algorithme DCTLMS-I
 
 <div class="flex gap-5">
     <div class="flex flex-col w-50% gap-2 text-center border border-white rounded">

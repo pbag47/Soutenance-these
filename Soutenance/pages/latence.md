@@ -10,7 +10,7 @@ level: 2
             src="/images/Mesure latence.png"
         />
 
-EVAL-ADAU1466Z : $1.3$ms
+EVAL-ADAU1466Z : $1,3$ ms
 
 </div>
     <div class="flex-col text-center">
@@ -18,7 +18,7 @@ EVAL-ADAU1466Z : $1.3$ms
             src="/images/Mesure latence avec nouvelle carte et I2S.png"
         />
 
-EVAL-ADAU1787 : $0.3$ms
+EVAL-ADAU1787 : $0,3$ ms
     
 </div>
 </div>

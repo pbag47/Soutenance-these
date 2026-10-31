@@ -1,5 +1,5 @@
 ---
-title: -RLS projeté
+title: -- RLS projeté
 level: 1
 ---
 
@@ -7,22 +7,24 @@ level: 1
 # Projection dans une autre base
 
 <div class="flex items-baseline gap-10">
+
 Algorithme RLS
 
 $$
 \boldsymbol{H}_n = \boldsymbol{H}_{n-1} + (1-\beta) e_n  \hat{\mathbf{R}}_n^{-1} \boldsymbol{X}_n
 $$
+
 </div>
 
 <Arrow 
-    x1="60%" y1="25%" 
-    x2="60%" y2="60%" 
+    x1="30%" y1="25%" 
+    x2="30%" y2="60%" 
     width="3" 
     color="orange"
     z="60"
 />
 
-<div class="absolute top-27% left-65% gap-0">
+<div class="absolute top-27% left-32% gap-0 border border-white px-5">
 
 $\mathbf{P}$ : matrice unitaire arbitraire
 

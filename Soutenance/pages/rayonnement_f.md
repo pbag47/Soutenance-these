@@ -6,12 +6,12 @@ level: 2
 
 # Influence de la fréquence traitée
 
-
-<div class="flex items-center text-center justify-center gap-5">
+<div class="flex flex-col justify-center h-full">
+<div class="flex items-center text-center justify-center gap-2">
 <div class="flex flex-col w-auto">
     <img
         src="/images/Att_2kHz_0_04_05.png"
-        class="object-contain"
+        class="object-contain border border-white rounded"
     />
 
 $f = 2000$Hz
@@ -20,7 +20,7 @@ $f = 2000$Hz
 <div class="flex flex-col w-auto">
     <img
         src="/images/Att_700Hz_0_04_05.png"
-        class="object-contain"
+        class="object-contain border border-white rounded"
     />
 
 $f = 700$Hz
@@ -29,23 +29,12 @@ $f = 700$Hz
 <div class="flex flex-col w-auto">
     <img
         src="/images/Att_150Hz_0_04_05.png"
-        class="object-contain"
+        class="object-contain border border-white rounded"
     />
 
 $f = 150$Hz
 
 </div>
 </div>
+</div>
 
-
-<!-- <div class="flex flex-col w-auto gap-5">
-    <img
-        src="/images/Att_150Hz_0_04_05.png"
-        class="object-contain"
-    />
-    <img
-        src="/images/Att_2kHz_0_02_05.png"
-        class="object-contain"
-    />
-</div> -->
-<!-- </div> -->

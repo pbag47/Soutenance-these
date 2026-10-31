@@ -82,6 +82,10 @@ src: ./pages/transi-DCTLMS.md
 ---
 
 ---
+src: ./pages/DCT.md
+---
+
+---
 src: ./pages/DCTLMS.md
 ---
 
@@ -110,11 +114,11 @@ src: ./pages/essais-vol.md
 ---
 
 ---
-src: ./pages/perspectives.md
+src: ./pages/conclusion.md
 ---
 
 ---
-src: ./pages/photos-drone.md
+src: ./pages/perspectives.md
 ---
 
 ---
@@ -123,6 +127,9 @@ src: ./pages/fin.md
 
 
 
+---
+src: ./pages/photos-drone.md
+---
 
 ---
 src: ./pages/Fx-LMS.md

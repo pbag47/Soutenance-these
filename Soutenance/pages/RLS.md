@@ -1,5 +1,5 @@
 ---
-title: -RLS
+title: -- RLS
 level: 1
 ---
 
@@ -19,14 +19,14 @@ $$
 </div>
 
 <Arrow 
-    x1="40%" y1="30%" 
-    x2="40%" y2="60%" 
+    x1="30%" y1="30%" 
+    x2="30%" y2="60%" 
     width="3" 
     color="orange"
     z="60"
 />
 
-<div class="absolute top-35% left-45%">
+<div class="absolute top-35% left-32% border border-white px-5">
 
 $$
 \begin{align}

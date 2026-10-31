@@ -6,6 +6,8 @@ level: 1
 
 # Problématique
 
+
+<div class="flex flex-col h-full pb-2.5cm justify-center">
 <h2 class="text-center mb-8 mt-8">Réduction active de bruit embarquée sur un drone</h2>
 
 
@@ -34,4 +36,4 @@ level: 1
 </div>
 
 <h3 class="text-center mt-8">Quelle pertinence ?</h3>
-
+</div>

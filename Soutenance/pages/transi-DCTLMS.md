@@ -1,5 +1,5 @@
 ---
-title: Démarche
+title: Raisonnement
 level: 2
 ---
 
@@ -21,7 +21,8 @@ level: 2
             v-motion
             :initial="{ left: '50%', top: '62%', right: '22%', bottom: '0%' }"
             :enter="{ left: '50%', top: '62%', right: '22%', bottom: '0%' }"
-            :click-1="{ left: '50%', top: '99%', right: '51%', bottom: '0%' }"
+            :click-1="{ left: '50%', top: '65%', right: '22%', bottom: '0%' }"
+            :click-2="{ left: '50%', top: '99%', right: '51%', bottom: '0%' }"
             class="absolute backdrop-blur"
         >
         </div>
@@ -39,5 +40,5 @@ level: 2
 
 
 <div v-click></div>
-
+<div v-click></div>
 

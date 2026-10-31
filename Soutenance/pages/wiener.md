@@ -1,17 +1,9 @@
 ---
-title: -Filtre de Wiener
+title: -- Filtre de Wiener
 level: 1
 ---
 
 # Filtre de Wiener
-
-<!-- <div class="absolute top-20 left-0 right-0 flex items-center">
-    <SlidevVideo autoplay autoreset="slide">
-        <source src="/videos/CircleToSquare.webm" type="video/webm" />
-    </SlidevVideo>
-</div> -->
-
-<div></div>
 
 Solution de la méthode des moindres carrés pour l'erreur $e_n$
 $$

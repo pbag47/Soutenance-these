@@ -14,8 +14,7 @@ level: 2
     />
 </div>
 
-Performances limitées
+- Performances limitées
+- Problèmes d'instabilité du contrôleur adaptatif lors des essais au sol
 
-Problèmes d'instabilité du contrôleur adaptatif
-
-
+En l'état, la réduction active de bruit ne peut pas être mise en oeuvre sur le drone
